@@ -1,0 +1,51 @@
+<% include partials/header %>
+
+<div class="container lista_cnt" style="margin-top:5%;">
+    <div class="row">
+            <% for(var i = 0; i < negocios.length; i++) {%>
+            <div class="col s12 m4">
+            
+                <div class="card">
+                    <div class="card-image">
+                    <span class="icon_card"><i class="material-icons">business</i></span>
+                    <span class="title"><%= negocios[i].Name %></span>
+                   </div>
+                    <div class="card-content">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                    <div class="collapsible-header">
+                                        <i class="material-icons">local_post_office</i>
+                                        <%= negocios[i].Email %>    
+                                    </div>                                
+                                    </li>
+                                    <li>
+                                    <div class="collapsible-header">
+                                        <i class="material-icons">place</i>
+                                        <%= negocios[i].Address %>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="material-icons">phone</i>
+                                            <%= negocios[i].Phone %>
+                                        </div>
+                                        </li>
+                                    <li>
+                                            <div class="collapsible-header">
+                                                <i class="material-icons">local_grocery_store</i>
+                                                <%= negocios[i].Category %>
+                                            </div>
+                                    </li>   
+                                    <li>
+                                    </li>
+                                    
+                                </ul>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+    </div>
+</div>    
+
+
+<% include partials/footer %>
