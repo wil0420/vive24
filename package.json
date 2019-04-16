@@ -1,7 +1,7 @@
 {
   "name": "userapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto creado con Node js y mongo Db",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wil0420/vive24.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wil0420/vive24/issues"
+  },
+  "homepage": "https://github.com/wil0420/vive24#readme"
 }
