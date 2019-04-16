@@ -1,19 +1,19 @@
 /* Requerimos las dependencias express */
 const path = require('path');
 const express = require('express');
-const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 
-
-const indexRoutes = require('./routes/index');
-
-
+const app = express();
 
 //conexion base de datos
 mongoose.connect('mongodb://localhost/negocios')
     .then(db => console.log('Db Conectada'))
-    .catch(db => console.log(err));
+    .catch(err => console.log(err));
+
+
+const indexRoutes = require('./routes/index');
+
 
 
 //Configuraciones
