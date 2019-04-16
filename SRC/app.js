@@ -11,9 +11,7 @@ const indexRoutes = require('./routes/index');
 
 
 //conexion base de datos
-mongoose.connect('mongodb://localhost/negocios')
-    .then(db => console.log('Db Conectada'))
-    .catch(db => console.log(err));
+
 
 
 //Configuraciones
